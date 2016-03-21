@@ -1,7 +1,9 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
-<head>
-    <title>澳盈移民 澳盈移民</title>
+<!-- Mirrored from www.auwin.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 16:08:46 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/><!-- /Added by HTTrack -->
+<head><title>澳盈移民 澳盈移民</title>
     <meta name="keywords" content=""/>
     <meta name="description" content="澳盈移民">
     <meta name="author" content="ThinkCMF">
@@ -10,44 +12,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit">
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <!-- HTML5 shim for IE8 support of HTML5 elements --> <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
-    <link rel="icon" href="/tpl/auwin/Public/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/tpl/auwin/Public/images/favicon.ico" type="image/x-icon">
-    <link href="/tpl/auwin/Public/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+    <meta name="renderer" content="webkit"> <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/> <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
+    <link rel="icon" href="tpl/auwin/Public/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="tpl/auwin/Public/images/favicon.ico" type="image/x-icon">
+    <link href="tpl/auwin/Public/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
           type="text/css">
-    <link rel="stylesheet" media="screen and (max-width: 779px)" href="/tpl/auwin/Public/css/j-dev-media.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 779px)" href="tpl/auwin/Public/css/j-dev-media.css"/>
     <!--[if IE 7]>
     <link rel="stylesheet" href="/tpl/auwin/Public/simpleboot/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/tpl/auwin/Public/css/loaders.css"/>
-    <link href="/tpl/auwin/Public/css/animate.min.css" rel="stylesheet">
-    <link href="/tpl/auwin/Public/css/j-dev-media.css" rel="stylesheet">
-    <link href="/tpl/auwin/Public/css/style.css" rel="stylesheet">
-    <link href="/tpl/auwin/Public/css/j-pc-dev.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="tpl/auwin/Public/css/loaders.css"/>
+    <link href="tpl/auwin/Public/css/animate.min.css" rel="stylesheet">
+    <link href="tpl/auwin/Public/css/j-dev-media.css" rel="stylesheet">
+    <link href="tpl/auwin/Public/css/style.css" rel="stylesheet">
+    <link href="tpl/auwin/Public/css/j-pc-dev.css" rel="stylesheet">
 </head>
 <body class="body-white">
 <header class="j-bg-color">
     <div class="g-container">
         <nav class="g-clear-lh">
-            <div class="inner-logo g-left"><a class="j-color g-clear-hover" href="/"><img
-                    src="/tpl/auwin/Public/images/logo.png" alt=""></a></div>
+            <div class="inner-logo g-left"><a class="j-color g-clear-hover" href="index.html"><img
+                    src="tpl/auwin/Public/images/logo.png" alt=""></a></div>
             <div class="inner-nav g-left">
                 <ul id="" class="">
-                    <li class='' id='menu-item-1'><a href='/' target=''>首页</a></li>
-                    <li class='' id='menu-item-2'><a href='/product' target=''>移民咨询</a></li>
-                    <li class='' id='menu-item-3'><a href='/invest' target=''>澳洲投资</a></li>
-                    <li class='' id='menu-item-4'><a href='/life' target=''>留学&amp;生活</a></li>
-                    <li class='' id='menu-item-5'><a href='/about' target=''>关于我们</a></li>
+                    <li class='' id='menu-item-1'><a href='index.html' target=''>首页</a></li>
+                    <li class='' id='menu-item-2'><a href='product.html' target=''>移民咨询</a></li>
+                    <li class='' id='menu-item-3'><a href='invest.html' target=''>澳洲投资</a></li>
+                    <li class='' id='menu-item-4'><a href='life.html' target=''>留学&amp;生活</a></li>
+                    <li class='' id='menu-item-5'><a href='about.html' target=''>关于我们</a></li>
                 </ul>
             </div>
             <div class="inner-login offline g-right j-lh-70"><a class="g-text-padding j-color j-font-size"
-                                                                href="/user/login/index">登录</a> <a
-                    class="g-text-padding j-color j-font-size" href="/user/register/index">注册</a></div>
+                                                                href="user/login/index.html">登录</a> <a
+                    class="g-text-padding j-color j-font-size" href="user/register/index.html">注册</a></div>
         </nav>
     </div>
 </header>
@@ -56,15 +56,15 @@
         <div id="slider1_container" style="position: relative; top: -1px; left: 0px; width: 1920px;margin: 0px auto;">
             <div u="slides"
                  style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 1920px; height: 570px;">
-                <div style="width: 1920px;height:570px;"><a href="http://www.auwin.net/about"><img u="image"
-                                                                                                   src="/data/upload/568cbb519aa4f.jpg"
-                                                                                                   alt=""></a></div>
-                <div style="width: 1920px;height:570px;"><a href="http://www.auwin.net/invest"><img u="image"
-                                                                                                    src="/data/upload/568b19fbe7810.jpg"
-                                                                                                    alt=""></a></div>
-                <div style="width: 1920px;height:570px;"><a href="http://www.auwin.net/life"><img u="image"
-                                                                                                  src="/data/upload/569defa58766c.jpg"
-                                                                                                  alt=""></a></div>
+                <div style="width: 1920px;height:570px;"><a href="about.html"><img u="image"
+                                                                                   src="data/upload/568cbb519aa4f.jpg"
+                                                                                   alt=""></a></div>
+                <div style="width: 1920px;height:570px;"><a href="invest.html"><img u="image"
+                                                                                    src="data/upload/568b19fbe7810.jpg"
+                                                                                    alt=""></a></div>
+                <div style="width: 1920px;height:570px;"><a href="life.html"><img u="image"
+                                                                                  src="data/upload/569defa58766c.jpg"
+                                                                                  alt=""></a></div>
             </div>
             <div data-u="navigator" class="jssorb05 Bullet" style="bottom:-530px;right:16px;" data-autocenter="1">
                 <div data-u="prototype" style=""></div>
@@ -83,7 +83,7 @@
                     <div class="advantage-header">
                         <div class="advantages-head">
                             <div class="icon icon-drupal"><img class="advantage-img"
-                                                               src="/tpl/auwin/Public/images/log6.png" alt=""></div>
+                                                               src="tpl/auwin/Public/images/log6.png" alt=""></div>
                         </div>
                     </div>
                     <div class="advantage-cont">
@@ -100,7 +100,7 @@
                     <div class="advantage-header">
                         <div class="advantages-head">
                             <div class="icon icon-drupal"><img class="advantage-img"
-                                                               src="/tpl/auwin/Public/images/log5.png" alt=""></div>
+                                                               src="tpl/auwin/Public/images/log5.png" alt=""></div>
                         </div>
                     </div>
                     <div class="advantage-cont">
@@ -117,7 +117,7 @@
                     <div class="advantage-header">
                         <div class="advantages-head">
                             <div class="icon icon-drupal"><img class="advantage-img"
-                                                               src="/tpl/auwin/Public/images/log3.png" alt=""></div>
+                                                               src="tpl/auwin/Public/images/log3.png" alt=""></div>
                         </div>
                     </div>
                     <div class="advantage-cont">
@@ -134,7 +134,7 @@
                     <div class="advantage-header">
                         <div class="advantages-head">
                             <div class="icon icon-drupal"><img class="advantage-img"
-                                                               src="/tpl/auwin/Public/images/log4.png" alt=""></div>
+                                                               src="tpl/auwin/Public/images/log4.png" alt=""></div>
                         </div>
                     </div>
                     <div class="advantage-cont">
@@ -155,19 +155,19 @@
             <div class="g-left">
                 移民产品
             </div>
-            <div class="g-right"><a class="a-link-hover" href="/product">更多产品&nbsp;+</a></div>
+            <div class="g-right"><a class="a-link-hover" href="product.html">更多产品&nbsp;+</a></div>
         </div>
     </div>
     <div class="g-container">
         <div class="j-warp cl-warp" style="padding:0">
             <div class="j-box">
                 <div class="j-box-warp">
-                    <div class="j-box-image"><a href="/article/"> <img src="/tpl/auwin/Public/images/guzhu.jpg"
-                                                                       class="img-responsive"/> </a>
+                    <div class="j-box-image"><a href="article/index.html"> <img src="tpl/auwin/Public/images/guzhu.jpg"
+                                                                                class="img-responsive"/> </a>
                         <div class="layer">
                             <div class="layermask"></div>
-                            <div class="layertext-index g-center"><a class="layer-btn j-color"
-                                                                     href="/article/8">更多详情</a></div>
+                            <div class="layertext-index g-center"><a class="layer-btn j-color" href="article/8.html">更多详情</a>
+                            </div>
                         </div>
                     </div>
                     <div class="warp-title g-center j-lh-40">雇主担保移民</div>
@@ -178,12 +178,12 @@
             </div>
             <div class="j-box">
                 <div class="j-box-warp">
-                    <div class="j-box-image"><a href="/article/"> <img src="/tpl/auwin/Public/images/188A.jpg"
-                                                                       class="img-responsive"/> </a>
+                    <div class="j-box-image"><a href="article/index.html"> <img src="tpl/auwin/Public/images/188A.jpg"
+                                                                                class="img-responsive"/> </a>
                         <div class="layer">
                             <div class="layermask"></div>
-                            <div class="layertext-index g-center"><a class="layer-btn j-color"
-                                                                     href="/article/9">更多详情</a></div>
+                            <div class="layertext-index g-center"><a class="layer-btn j-color" href="article/9.html">更多详情</a>
+                            </div>
                         </div>
                     </div>
                     <div class="warp-title g-center j-lh-40">188A签证</div>
@@ -194,12 +194,12 @@
             </div>
             <div class="j-box">
                 <div class="j-box-warp">
-                    <div class="j-box-image"><a href="/article/"> <img src="/tpl/auwin/Public/images/188C.jpg"
-                                                                       class="img-responsive"/> </a>
+                    <div class="j-box-image"><a href="article/index.html"> <img src="tpl/auwin/Public/images/188C.jpg"
+                                                                                class="img-responsive"/> </a>
                         <div class="layer">
                             <div class="layermask"></div>
-                            <div class="layertext-index g-center"><a class="layer-btn j-color"
-                                                                     href="/article/10">更多详情</a></div>
+                            <div class="layertext-index g-center"><a class="layer-btn j-color" href="article/10.html">更多详情</a>
+                            </div>
                         </div>
                     </div>
                     <div class="warp-title g-center j-lh-40">188C签证</div>
@@ -224,7 +224,7 @@
             </div>
         </div>
     </div>
-    <div class="img_ad" style="background-image: url(/tpl/auwin/Public/images/log10.jpg);"></div>
+    <div class="img_ad" style="background-image: url(tpl/auwin/Public/images/log10.jpg);"></div>
 </div>
 <div class="send-model g-hide">
     <div class="send-box animated">
@@ -266,24 +266,24 @@
             <div class="col-8">
                 <div class="cl-warp policy-news jinpai_g">
                     <div class="policy-news-img g-left"
-                         style=" background-image: url(/tpl/auwin/Public/images/immi-inquiry-1.jpg);"></div>
+                         style=" background-image: url(tpl/auwin/Public/images/immi-inquiry-1.jpg);"></div>
                     <div class="policy-news-item g-right ">
                         <div class="policy-type">移民咨询
-                            <span style="margin-right: 25px;float: right;"><a href="/product#hz" name="hz">更多&nbsp;+</a></span>
-                        </div>
+                            <span style="margin-right: 25px;float: right;"><a href="product.html#hz"
+                                                                              name="hz">更多&nbsp;+</a></span></div>
                         <div class="policylists">
-                            <li><a href="/article/50">澳元新低已打破历史记录</a></li>
+                            <li><a href="article/50.html">澳元新低已打破历史记录</a></li>
                         </div>
                     </div>
                 </div>
                 <br> <br>
                 <div class="cl-warp policy-Case jinpai_g">
                     <div class="policy-news-img g-left"
-                         style=" background-image: url(/tpl/auwin/Public/images/immi-inquiry-3.jpg);"></div>
+                         style=" background-image: url(tpl/auwin/Public/images/immi-inquiry-3.jpg);"></div>
                     <div class="policy-news-item g-right">
                         <div class="policy-type">成功案例
-                            <span style="margin-right: 25px;float: right;"><a href="/product#hz2"
-                                                                              name="hz2">更多&nbsp;+</a></span></div>
+                            <span style="margin-right: 25px;float: right;"><a href="product.html#hz2" name="hz2">更多&nbsp;+</a></span>
+                        </div>
                         <div class="policylists">
                             <li>恭喜C小姐获得457签证</li>
                         </div>
@@ -300,11 +300,11 @@
                                         <div u="slides"
                                              style="cursor: move; position: absolute; left: 0px; top: 0px; width: 300px; height: 360px;overflow: hidden;">
                                             <div style="width: 300px;height:360px;"><img
-                                                    src="/data/upload/56a6252ec0cbf.jpg" alt=""></div>
+                                                    src="data/upload/56a6252ec0cbf.jpg" alt=""></div>
                                             <div style="width: 300px;height:360px;"><img
-                                                    src="/data/upload/56a6250d31e30.jpg" alt=""></div>
+                                                    src="data/upload/56a6250d31e30.jpg" alt=""></div>
                                             <div style="width: 300px;height:360px;"><img
-                                                    src="/data/upload/56a62362e61b0.jpg" alt=""></div>
+                                                    src="data/upload/56a62362e61b0.jpg" alt=""></div>
                                         </div>
                                         <div data-u="navigator" class="jssorb05 Bullet" style="top:300px;right:16px;"
                                              data-autocenter="1">
@@ -335,12 +335,12 @@
 <div id="footer" class="cl-warp">
     <div class="links g-container">
         <div class="foot-top">
-            <div class="footer-logo g-left"><a class="j-color g-clear-hover" href="/"><img
-                    src="/tpl/auwin/Public/images/logo-black.png" alt=""></a></div>
-            <div class="footer-nav g-left"><a href="/about">关于我们</a> <a href="/product">移民产品</a> <a href="/product#hz"
-                                                                                                    name="hz">政策咨询</a>
-                <a href="/product#hz2" name="hz2">获签公告</a> <a href="/about">联系我们</a></div>
-            <div class="footer-wechat g-right"><img src="/tpl/auwin/Public/images/wechat.jpg" alt=""></div>
+            <div class="footer-logo g-left"><a class="j-color g-clear-hover" href="index.html"><img
+                    src="tpl/auwin/Public/images/logo-black.png" alt=""></a></div>
+            <div class="footer-nav g-left"><a href="about.html">关于我们</a> <a href="product.html">移民产品</a> <a
+                    href="product.html#hz" name="hz">政策咨询</a> <a href="product.html#hz2" name="hz2">获签公告</a> <a
+                    href="about.html">联系我们</a></div>
+            <div class="footer-wechat g-right"><img src="tpl/auwin/Public/images/wechat.jpg" alt=""></div>
         </div>
     </div>
 </div>
@@ -363,14 +363,14 @@
 </script> <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/statics/js/jquery.js"></script>
-<script src="/statics/js/wind.js"></script>
-<script src="/tpl/auwin/Public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
-<script src="/statics/js/frontend.js"></script>
-<script src="/tpl/auwin/Public/js/jssor.slider.mini.js"></script>
-<script src="/tpl/auwin/Public/js/jquery.bxslider.js"></script>
-<script src="/tpl/auwin/Public/js/module.js"></script>
-<script src="/tpl/auwin/Public/js/class.js"></script>
+<script src="statics/js/jquery.js"></script>
+<script src="statics/js/wind.js"></script>
+<script src="tpl/auwin/Public/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+<script src="statics/js/frontend.js"></script>
+<script src="tpl/auwin/Public/js/jssor.slider.mini.js"></script>
+<script src="tpl/auwin/Public/js/jquery.bxslider.js"></script>
+<script src="tpl/auwin/Public/js/module.js"></script>
+<script src="tpl/auwin/Public/js/class.js"></script>
 <script>
     $(function () {
         $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {
@@ -489,4 +489,5 @@
     });
 </script>
 </body>
+<!-- Mirrored from www.auwin.net/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 21 Mar 2016 16:09:51 GMT -->
 </html>

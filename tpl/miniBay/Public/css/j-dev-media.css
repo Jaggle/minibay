@@ -1,0 +1,115 @@
+body{
+	margin: 0;
+	padding:0;
+}
+
+
+.advantage1 .icon,
+.advantage1 .icon:after {
+    background-color: #2470a1;
+}
+.advantage2 .icon,
+.advantage2 .icon:after {
+    background-color: #3d4098;
+}
+.advantage3 .icon,
+.advantage3 .icon:after {
+    background-color: #339086;
+}
+.advantage4 .icon,
+.advantage4 .icon:after {
+    background-color: #6c2075;
+}
+.advantage1:hover .advantages-head .icon,.advantage2:hover .advantages-head .icon,.advantage3:hover .advantages-head .icon,.advantage4:hover .advantages-head .icon {
+    bottom: 50%;
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    -moz-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+
+.advantage1:hover .advantages-head .icon:after,.advantage2:hover .advantages-head .icon:after,.advantage3:hover .advantages-head .icon:after,.advantage4:hover .advantages-head .icon:after {
+    -moz-transform: scale(100);
+    -ms-transform: scale(100);
+    -webkit-transform: scale(100);
+    transform: scale(100);
+    -moz-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+    -o-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+    -webkit-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition-delay: 0.4s;
+    transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.4s;
+}
+
+.advantage1 .advantages-head,.advantage2 .advantages-head,.advantage3 .advantages-head,.advantage4 .advantages-head {
+    position: absolute;
+    top:-1px;
+    height: 160px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.advantage1 .advantages-head .icon,.advantage2 .advantages-head .icon,.advantage3 .advantages-head .icon,.advantage4 .advantages-head .icon {
+	text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 120px;
+    width: 120px;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+    -o-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+    -webkit-transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition-delay: 0.5s;
+    transition: all 0.8s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.5s;
+}
+
+
+.advantage1 .advantages-head .icon:before,.advantage2 .advantages-head .icon:before,.advantage3 .advantages-head .icon:before,.advantage4 .advantages-head .icon:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: white;
+    -moz-transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.advantage1 .advantages-head .icon:after,.advantage2 .advantages-head .icon:after,.advantage3 .advantages-head .icon:after,.advantage4 .advantages-head .icon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -moz-transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -webkit-transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
