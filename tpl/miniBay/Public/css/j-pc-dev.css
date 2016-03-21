@@ -1794,7 +1794,7 @@ img.fix_img{
 	display: block;
 }
 .liuxue-banner{
-	background: url(http://www.auwin.net/tpl/auwin/Public/images/log22.jpg);
+	background: url(../images/log22.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
