@@ -6,8 +6,8 @@ return array(
     'DB_TYPE' => 'mysql',
     'DB_HOST' => 'localhost',
     'DB_NAME' => 'lw',
-    'DB_USER' => 'root',
-    'DB_PWD' => '',
+    'DB_USER' => 'admin',
+    'DB_PWD' => 'new-password',
     'DB_PORT' => '3306',
     'DB_PREFIX' => 'lw_',
     //密钥
