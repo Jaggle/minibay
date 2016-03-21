@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head><title>澳盈移民 澳盈移民</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="澳盈移民">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit"> <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/> <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
+    <link rel="icon" href="tpl/miniBay_mobile/Public/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="tpl/miniBay_mobile/Public/images/favicon.ico" type="image/x-icon">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="tpl/miniBay_mobile/Public/simpleboot/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link href="tpl/miniBay_mobile/Public/css/j-pc-dev.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="m-header">
+        <div class="m-logo"><a href="/"><img src="tpl/miniBay_mobile//Public/images/logo.png" alt=""></a></div>
+        <div class="m-nav"></div>
+    </div>
+    <div class="m-win-100" style="overflow: hidden;">
+        <div class="m-meun">
+            <ul id="" class="">
+                <li class='' id='menu-item-1'><a href='/' target=''>首页</a></li>
+                <li class='' id='menu-item-2'><a href='/product' target=''>移民咨询</a></li>
+                <li class='' id='menu-item-3'><a href='/invest' target=''>澳洲投资</a></li>
+                <li class='' id='menu-item-4'><a href='/life' target=''>留学&amp;生活</a></li>
+                <li class='' id='menu-item-5'><a href='/about' target=''>关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="home-slider-m"></div>
+<div id="slider2_container">
+    <div u="slides" class="m-home-slids"
+         style="cursor: move; position: absolute; left: 0px; top: 0px;overflow: hidden;">
+        <div style="width: 100%;height:100%;)">
+            <div class="m-slide-co" style="background-image:url(data/upload/56972ab320637.jpg)">
+                <div class="overlay">
+                    <div class="span">澳盈移民
+
+                        是一家集移民、留学、海外定居、商业投资等
+
+                        多项目运营的全方位集团公司。
+                    </div>
+                    <a href="about" class="m-linkmore">
+                        关于我们 </a></div>
+            </div>
+        </div>
+        <div style="width: 100%;height:100%;)">
+            <div class="m-slide-co" style="background-image:url(data/upload/56972ae3b941e.jpg)">
+                <div class="overlay">
+                    <div class="span">AUWIN
+
+                        您移民之路上的一座桥
+                    </div>
+                    <a href="product" class="m-linkmore">
+                        了解更多 </a></div>
+            </div>
+        </div>
+        <div style="width: 100%;height:100%;)">
+            <div class="m-slide-co" style="background-image:url(data/upload/569deafc8a32e.jpg)">
+                <div class="overlay">
+                    <div class="span">澳洲
+                        是安全的投资地点，是全球最具韧性的经济体之一。
+                    </div>
+                    <a href="invest" class="m-linkmore">
+                        了解更多 </a></div>
+            </div>
+        </div>
+        <div style="width: 100%;height:100%;)">
+            <div class="m-slide-co" style="background-image:url(data/upload/569deb26a2f35.jpg)">
+                <div class="overlay">
+                    <div class="span">澳洲
+
+                        您留学和生活的下一站！
+                    </div>
+                    <a href="life" class="m-linkmore">
+                        了解更多 </a></div>
+            </div>
+        </div>
+        <div data-u="navigator" class="jssorb05 Bullet" style="" data-autocenter="1">
+            <div data-u="prototype" style=""></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        DIMAUB: "/",
+        JS_ROOT: "statics/js/",
+        TOKEN: ""
+    };
+</script> <!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="statics/js/jquery.js"></script>
+<script src="tpl/miniBay_mobile/Public/js/jssor.slider.mini.js"></script>
+<script src="tpl/miniBay_mobile/Public/js/class.js"></script>
+<script>
+    initHeImg();
+    m_nav_cl();
+    var boxm_height = $(window).height();
+    var boxm_width = $(window).width();
+    $('.m-home-slids').css({
+        height: boxm_height,
+        width: boxm_width
+    })
+
+    $(window).resize(function () {
+        var boxm_height = $(window).height();
+        $('.m-banner').css({
+            height: boxm_height
+        })
+        $('.slider_box').css({
+            height: boxm_height
+        })
+    })
+    jQuery(document).ready(function ($) {
+        var options = {
+            $DragOrientation: 1,
+            $LazyLoading: 2,
+            $Loop: 0,
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $ChanceToShow: 2
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $ChanceToShow: 2,
+                $AutoCenter: 2,
+                $Steps: 1
+            }
+        };
+        var jssor_slider2 = new $JssorSlider$("slider2_container", options);
+    });
+</script>
+</body>
+</html>
