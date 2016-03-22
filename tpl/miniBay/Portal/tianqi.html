@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<head><title> 智能生活助手</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="">
+    <meta name="author" content="ThinkCMF">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit"> <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/> <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
+    <link rel="icon" href="__PUB__/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="__PUB__/images/favicon.ico" type="image/x-icon">
+    <link href="__PUB__/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 779px)" href="__PUB__/css/j-dev-media.css"/>
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/__PUB__/simpleboot/font-awesome/4.2.0/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUB__/css/loaders.css"/>
+    <link href="__PUB__/css/animate.min.css" rel="stylesheet">
+    <link href="__PUB__/css/j-dev-media.css" rel="stylesheet">
+    <link href="__PUB__/css/style.css" rel="stylesheet">
+    <link href="__PUB__/css/j-pc-dev.css" rel="stylesheet">
+</head>
+<body class="">
+<include file="./tpl/miniBay/Block/header.html" />
+<div class="header_banner liuxue-banner">
+    <div class="header_ba_desc">
+        miniBay
+        <br>与您的优质生活同行
+    </div>
+</div>
+<div class="product-main">
+    <div class="g-container product-nav">
+        <div class="g-media-nav subMenu">
+            <h2 style="text-align: center;padding-top: 10px">天气查询</h2>
+        </div>
+        <div class="g-media-content life">
+            <div class="visa1">
+                <style>
+                    #weaItemsWraper > a{
+                        display: none;
+                    }
+                </style>
+                <iframe style="margin: 0 auto;padding-top: 100px" allowtransparency="true" frameborder="0" width="100%" height="98" scrolling="no" src="http://tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=1&v=0&d=3&bd=0&k=&f=&q=1&e=1&a=1&c=54511&w=565&h=98&align=center"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+<include file="./tpl/miniBay/Block/footer.html" />
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        DIMAUB: "/",
+        JS_ROOT: "statics/js/",
+        TOKEN: ""
+    };
+</script>
+<!-- Le javascript
+    ==================================================
+    -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="statics/js/jquery.js"></script>
+<script src="statics/js/wind.js"></script>
+<script src="__PUB__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+<script src="statics/js/frontend.js"></script>
+<script src="__PUB__/js/jssor.slider.mini.js"></script>
+<script src="__PUB__/js/jquery.bxslider.js"></script>
+<script src="__PUB__/js/module.js"></script>
+<script src="__PUB__/js/class.js"></script>
+<script>
+    $(function () {
+        $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+
+        $("#main-menu li.dropdown").hover(function () {
+            $(this).addClass("open");
+        }, function () {
+            $(this).removeClass("open");
+        });
+
+        $.post("/user/index/is_login", {}, function (data) {
+            if (data.status == 1) {
+                if (data.user.avatar) {
+                    $(".user-headicon").attr("src", data.user.avatar.indexOf("http") == 0 ? data.user.avatar : "/data/upload/avatar/" + data.user.avatar);
+                }
+                $(".user-info").mouseenter(function () {
+                    $('.dropdown-info').addClass('g-show');
+                });
+                $(".dropdown-info").mouseleave(function () {
+                    $('.dropdown-info').removeClass('g-show');
+                });
+                $(".user-info").mouseleave(function () {
+                    $('.dropdown-info').removeClass('g-show');
+                });
+                $(".dropdown-info .dropdown-info-name").text(data.user.user_nicename != "" ? data.user.user_nicename : data.user.user_login);
+            }
+            if (data.status == 0) {
+                $("#main-menu-user li.user.offline").show();
+            }
+
+        });
+        (function ($) {
+            $.fn.totop = function (opt) {
+                var scrolling = false;
+                return this.each(function () {
+                    var $this = $(this);
+                    $(window).scroll(function () {
+                        if (!scrolling) {
+                            var sd = $(window).scrollTop();
+                            if (sd >= 1000) {
+                                $this.stop().animate({
+                                    opacity: '1',
+                                    top: '0'
+                                }, 300);
+                            } else if (sd < 1000) {
+                                $this.stop().animate({
+                                    opacity: '0',
+                                    top: '-40px'
+                                }, 300);
+                            }
+                        }
+                    });
+
+                    $this.click(function () {
+                        scrolling = true;
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 500, function () {
+                            scrolling = false;
+                            $this.css({opacity: 0});
+                        });
+                    });
+                });
+            };
+        })(jQuery);
+
+        $("#backtotop").totop();
+        $(document).ready(function () {
+            var width = $('.policy-news-item').width();
+            $('.slider1').bxSlider({
+                mode: 'vertical',
+                slideWidth: width,
+                minSlides: 5,
+                pager: false,
+                slideMargin: 4
+            });
+        });
+        $('.header_ba_desc').css({
+            '-webkit-transform': 'scale(1)',
+            '-ms-transform': 'scale(1)',
+            '-o-transform': 'scale(1)',
+            'transform': 'scale(1)',
+            '-webkit-transition': '0.5s',
+            '-o-transition': '0.5s',
+            'transition': '0.5s',
+        })
+    });
+</script>
+<script src="__PUB__/js/jssor.slider.mini.js"></script>
+<script>
+    linkAnchor('.g-media-nav a', 500);
+    scrTop();
+    liuxue('#liuxuezixun', 'life-active');
+    liuxue('#liuxishenqing', 'life-active');
+    jQuery(document).ready(function ($) {
+        var options = {
+            $DragOrientation: 1,
+            $LazyLoading: 2,
+            $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $ChanceToShow: 2
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $ChanceToShow: 2,
+                $AutoCenter: 2,
+                $Steps: 1
+            }
+        };
+        var jssor_slider1 = new $JssorSlider$("slider6_container", options);
+        $(window).resize(function () {
+            var width = $('.visa-type').width();
+            $('.arrow_box').css({
+                'width': width,
+                'margin-left': -width / 2
+            })
+        })
+    });
+</script>
+</body>
+
+</html>
+
+
