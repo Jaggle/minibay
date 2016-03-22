@@ -692,7 +692,7 @@ function setCookie(name, value, days) {
     var expire = new Date();
     if(days==null || days==0) days=1;
     expire.setTime(expire.getTime() + 3600000*24*days);
-    document.cookie = name + "=" + escape(value) + ("http://www.auwin.net/; path=/") + ((secure == true) ? "; secure" : "") + ";expires="+expire.toGMTString();
+    document.cookie = name + "=" + escape(value) + ("/; path=/") + ((secure == true) ? "; secure" : "") + ";expires="+expire.toGMTString();
 }
 
 //浮出提示_居中

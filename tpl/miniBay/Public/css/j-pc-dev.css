@@ -10,8 +10,8 @@ body,html{
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: url(http://www.auwin.net/tpl/auwin/Public/fonts/MaterialIcons-Regular.eot);
-    src: local('Material Icons'), local('MaterialIcons-Regular'), url(http://www.auwin.net/tpl/auwin/Public/fonts/MaterialIcons-Regular.woff2) format('woff2'), url(http://www.auwin.net/tpl/auwin/Public/fonts/MaterialIcons-Regular.woff) format('woff'), url(http://www.auwin.net/tpl/auwin/Public/fonts/MaterialIcons-Regular.ttf) format('truetype')
+    src: url(../fonts/MaterialIcons-Regular.eot);
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/MaterialIcons-Regular.woff2) format('woff2'), url(../fonts/MaterialIcons-Regular.woff) format('woff'), url(../fonts/MaterialIcons-Regular.ttf) format('truetype')
 }
 
 .material-icons {
@@ -113,7 +113,7 @@ header{
 	width: 100%;
  	position: absolute;
     top: 0;
-    z-index: 10;
+    z-index: 100;
     min-width: 1120px;
     -webkit-font-smoothing: antialiased;
 }
@@ -597,7 +597,7 @@ header.article_nav{
 }
 
 .blur {	
-    filter: url(http://www.auwin.net/tpl/auwin/Public/css/blur.svg#blur); /* FireFox, Chrome, Opera */
+    filter: url(../css/blur.svg#blur); /* FireFox, Chrome, Opera */
     
     -webkit-filter: blur(2px); /* Chrome, Opera */
        -moz-filter: blur(2px);
@@ -1031,7 +1031,7 @@ img.fix_img{
     background-position: center center;
 }
 .qqtalk{
-    background-image: url(http://www.auwin.net/tpl/auwin/Public/images/log24.png);
+    background-image: url(../images/log24.png);
 }
 #sharetalk a{
 	width: 100%;
@@ -1041,14 +1041,14 @@ img.fix_img{
 }
 
 .phonetalk{
-	background-image: url(http://www.auwin.net/tpl/auwin/Public/images/log25.png);
+	background-image: url(../images/github.png);
 }
 #backtotop{
     position: relative;
     z-index: -1;
     opacity: 0;
    	top: -40px;
-   	background: url(http://www.auwin.net/tpl/auwin/Public/images/icon_all.png) no-repeat;
+   	background: url(../images/icon_all.png) no-repeat;
    	background-position: 1;
 }
 /*#ajaxInfo{
@@ -1138,7 +1138,7 @@ img.fix_img{
     left:0px;
 }
 .re-me-img{
-	background-image:url(http://www.auwin.net/tpl/auwin/Public/images/log28.png); 
+	background-image:url(../images/log28.png);
 	background-repeat: no-repeat;
     background-position: 3px 2px;
 }
@@ -1763,13 +1763,13 @@ img.fix_img{
 	border:0;
 }
 .aboutusimg{
-	background: url(http://www.auwin.net/tpl/auwin/Public/images/aboutus.jpg);
+	background: url(../images/aboutus.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .investbannerimg{
-	background: url(http://www.auwin.net/tpl/auwin/Public/images/log18.jpg);
+	background: url(../images/log18.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

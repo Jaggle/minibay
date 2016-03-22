@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head><title>澳盈移民</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="澳盈移民">
+    <meta name="author" content="ThinkCMF">
+    <meta name="author" content="ThinkCMF">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit"> <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/> <!-- HTML5 shim for IE8 support of HTML5 elements --> <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
+    <link rel="icon" href="__PUB__/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="__PUB__/images/favicon.ico" type="image/x-icon">
+    <link href="__PUB__/simpleboot/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="screen and (max-width: 779px)" href="__PUB__/css/j-dev-media.css"/>
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="__PUB__/simpleboot/font-awesome/4.2.0/css/font-awesome-ie7.min.css"> <![endif]-->
+    <link rel="stylesheet" type="text/css" href="__PUB__/css/loaders.css"/>
+    <link href="__PUB__/css/animate.min.css" rel="stylesheet">
+    <link href="__PUB__/css/j-dev-media.css" rel="stylesheet">
+    <link href="__PUB__/css/style.css" rel="stylesheet">
+    <link href="__PUB__/css/j-pc-dev.css" rel="stylesheet">
+</head>
+<body class="body-white g-clearBoth">
+<header class="j-bg-color3" id="logheader">
+    <div class="g-container">
+        <nav class="g-clear-lh">
+            <div class="inner-logo g-left"><a class="j-color g-clear-hover" href="__ROOT__"><img src="__PUB__/images/logo-black.png" alt=""></a>
+            </div>
+            <div class="division g-left">
+                <hr>
+            </div>
+            <div class="inner-nav g-left">
+                <ul>登录账号</ul>
+            </div>
+            <div class="inner-login g-right j-lh-70"><span>没有账号？现在就</span> <a class="g-text-padding j-font-size j-bg-color2 j-color"
+                                                                              href="__ROOT__/user/register/index">注册</a></div>
+        </nav>
+    </div>
+</header>
+<div id="logform" class="g-container">
+    <div id="ajaxInfo" class="animated"></div>
+    <div class="row">
+        <form class="" action="" method="post">
+            <div class="control-box">
+                <div class="input_group g-center"><label>用&nbsp;&nbsp;户&nbsp;&nbsp;名</label>
+
+                    <div class="box-input"><input type="text" id="input_username" name="username" placeholder="请输入用户名"></div>
+                </div>
+                <div class="input_group g-center"><label>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+
+                    <div class="box-input"><input type="password" id="input_password" name="password" placeholder="请输入密码" class="span3"></div>
+                </div>
+                <div class="input_group g-center"><label></label>
+
+                    <div class="box-input"><input id="reme_select" name="reme_select" type="hidden" value="1">
+
+                        <div class="re-me g-left"><span class="re-me-img"></span>记录登录状态</div>
+                        <div class="forgot g-right"><a href="/user/login/forgot_password"><span></span>忘记密码</a></div>
+                    </div>
+                </div>
+                <div class="input_group g-center">
+                    <div class="post-btn j-bg-color2 j-color">登录</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    //全局变量
+    var GV = {
+        DIMAUB: "/",
+        JS_ROOT: "statics/js/",
+        TOKEN: ""
+    };
+</script> <!-- Le javascript
+    ================================================== --> <!-- Placed at the end of the document so the pages load faster -->
+<script src="/statics/js/jquery.js"></script>
+<script src="/statics/js/wind.js"></script>
+<script src="__PUB__/simpleboot/bootstrap/js/bootstrap.min.js"></script>
+<script src="/statics/js/frontend.js"></script>
+<script src="__PUB__/js/jssor.slider.mini.js"></script>
+<script src="__PUB__/js/jquery.bxslider.js"></script>
+<script src="__PUB__/js/module.js"></script>
+<script src="__PUB__/js/class.js"></script>
+<script>
+    $(function () {
+        $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+
+        $("#main-menu li.dropdown").hover(function () {
+            $(this).addClass("open");
+        }, function () {
+            $(this).removeClass("open");
+        });
+
+        $.post("/user/index/is_login", {}, function (data) {
+            if (data.status == 1) {
+                if (data.user.avatar) {
+                    $(".user-headicon").attr("src", data.user.avatar.indexOf("http") == 0 ? data.user.avatar : "/data/upload/avatar/" + data.user.avatar);
+                }
+                $(".user-info").mouseenter(function () {
+                    $('.dropdown-info').addClass('g-show');
+                });
+                $(".dropdown-info").mouseleave(function () {
+                    $('.dropdown-info').removeClass('g-show');
+                });
+                $(".user-info").mouseleave(function () {
+                    $('.dropdown-info').removeClass('g-show');
+                });
+                $(".dropdown-info .dropdown-info-name").text(data.user.user_nicename != "" ? data.user.user_nicename : data.user.user_login);
+            }
+            if (data.status == 0) {
+                $("#main-menu-user li.user.offline").show();
+            }
+
+        });
+        (function ($) {
+            $.fn.totop = function (opt) {
+                var scrolling = false;
+                return this.each(function () {
+                    var $this = $(this);
+                    $(window).scroll(function () {
+                        if (!scrolling) {
+                            var sd = $(window).scrollTop();
+                            if (sd >= 1000) {
+                                $this.stop().animate({
+                                    opacity: '1',
+                                    top: '0'
+                                }, 300);
+                            } else if (sd < 1000) {
+                                $this.stop().animate({
+                                    opacity: '0',
+                                    top: '-40px'
+                                }, 300);
+                            }
+                        }
+                    });
+
+                    $this.click(function () {
+                        scrolling = true;
+                        $('html, body').animate({
+                            scrollTop: 0
+                        }, 500, function () {
+                            scrolling = false;
+                            $this.css({opacity: 0});
+                        });
+                    });
+                });
+            };
+        })(jQuery);
+
+        $("#backtotop").totop();
+        $(document).ready(function () {
+            var width = $('.policy-news-item').width();
+            $('.slider1').bxSlider({
+                mode: 'vertical',
+                slideWidth: width,
+                minSlides: 5,
+                pager: false,
+                slideMargin: 4
+            });
+        });
+        $('.header_ba_desc').css({
+            '-webkit-transform': 'scale(1)',
+            '-ms-transform': 'scale(1)',
+            '-o-transform': 'scale(1)',
+            'transform': 'scale(1)',
+            '-webkit-transition': '0.5s',
+            '-o-transition': '0.5s',
+            'transition': '0.5s',
+        })
+    });
+</script>
+<script>
+    reselect();
+    $('.post-btn').click(function () {
+        $('#ajaxInfo').removeClass('shake');
+        var input_username = $('#input_username').val();
+        var input_password = $('#input_password').val();
+        var reme_select = $('#reme_select').val();
+        $.ajax({
+            type: "POST",
+            url: "/user/login/dologin",
+            beforeSend: function () {
+                $('.post-btn').text('登录中...');
+            },
+            data: {username: input_username, password: input_password, reme_select: reme_select},
+            success: function (data) {
+                status(data, 2);
+            },
+            complete: function () {
+                $('.post-btn').text('登录');
+            }
+        });
+    })
+</script>
+</body>
+</html>

@@ -865,7 +865,7 @@ ul.tc-photos {
     width: 55px;
     height: 55px;
     cursor: pointer;
-    background: url(http://www.auwin.net/tpl/auwin/Public/images/a22.png) no-repeat;
+    background: url(../images/a22.png) no-repeat;
     overflow: hidden;
 }
 .log002{
@@ -875,7 +875,7 @@ ul.tc-photos {
     width: 55px;
     height: 55px;
     cursor: pointer;
-    background: url(http://www.auwin.net/tpl/auwin/Public/images/log002.png) no-repeat;
+    background: url(../images/log002.png) no-repeat;
     overflow: hidden; 
 }
 .log001{
@@ -885,7 +885,7 @@ ul.tc-photos {
     width: 55px;
     height: 55px;
     cursor: pointer;
-    background: url(http://www.auwin.net/tpl/auwin/Public/images/log001.png) no-repeat;
+    background: url(../images/log001.png) no-repeat;
     overflow: hidden; 
 }
 .jssora03l {

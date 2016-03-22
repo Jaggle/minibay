@@ -92,6 +92,7 @@ $configs= array(
         	'/Public/upload'=>'/data/upload',
         	'__UPLOAD__' => __ROOT__.'/data/upload/',
         	'__STATICS__' => __ROOT__.'/statics/',
+	        '__PUB__' => __ROOT__.'/tpl/miniBay/Public'
         )
 );
 
