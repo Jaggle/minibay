@@ -4,7 +4,7 @@
  */
 return array(
     'DB_TYPE' => 'mysql',
-    'DB_HOST' => 'localhost',
+    'DB_HOST' => 'yeskn.com',
     'DB_NAME' => 'lw',
     'DB_USER' => 'admin',
     'DB_PWD' => 'new-password',
