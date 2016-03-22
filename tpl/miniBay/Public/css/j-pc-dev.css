@@ -1747,7 +1747,7 @@ img.fix_img{
 }
 
 .j{
-	height: 570px;
+	height: 100px;
 	position: relative;
 }
 
@@ -1769,7 +1769,8 @@ img.fix_img{
     background-position: center center;
 }
 .investbannerimg{
-	background: url(../images/log18.jpg);
+	background: #005bac;
+	/*background: url(../images/log18.jpg);*/
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

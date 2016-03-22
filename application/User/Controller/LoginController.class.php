@@ -147,7 +147,7 @@ hello;
     function dologin(){
 
     	if(!sp_check_verify_code()){
-    		$this->error("验证码错误！");
+    		//$this->error("验证码错误！");
     	}
     	
     	$users_model=M("Users");

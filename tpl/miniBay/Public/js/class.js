@@ -111,45 +111,45 @@ function liuxue (dom,active) {
     var url = $('#action').val();
     var firstId = $(''+dom+''+' .policy-anli-ltems li').eq(0).attr('data-id');
     var firstActive = url+'/id/'+firstId+'/';
-    $.ajax({
-        type: "GET",
-        url: firstActive,
-        cache: false,
-        beforeSend: function(){
-            $('.policy-anli-ltems.ltems2 .desc').empty();
-            $(''+dom+''+' .loader').show();
-        },
-        success:function(data) {
-            var jsonObj = eval("("+data+")");
-            $(''+dom+''+' .policy-anli-ltems.ltems2 .title').html(jsonObj['post_title']);
-            $(''+dom+''+' .policy-anli-ltems.ltems2 .desc').html(jsonObj['post_content']);
-        },
-        complete: function(){
-            $(''+dom+''+' .loader').hide();
-        }
-    });
+    //$.ajax({
+    //    type: "GET",
+    //    url: firstActive,
+    //    cache: false,
+    //    beforeSend: function(){
+    //        $('.policy-anli-ltems.ltems2 .desc').empty();
+    //        $(''+dom+''+' .loader').show();
+    //    },
+    //    success:function(data) {
+    //        var jsonObj = eval("("+data+")");
+    //        $(''+dom+''+' .policy-anli-ltems.ltems2 .title').html(jsonObj['post_title']);
+    //        $(''+dom+''+' .policy-anli-ltems.ltems2 .desc').html(jsonObj['post_content']);
+    //    },
+    //    complete: function(){
+    //        $(''+dom+''+' .loader').hide();
+    //    }
+    //});
     var url = $('#action').val();
     $(''+dom+''+' .policy-anli-ltems li').click(function () {
         $(this).addClass(active).siblings().removeClass(active);
         var id = $(this).attr('data-id');
         var action = url+'/id/'+id+'/';
-        $.ajax({
-            type: "GET",
-            url: action,
-            cache: false,
-            beforeSend: function(){
-                $('.policy-anli-ltems.ltems2 .desc').empty();
-                $(''+dom+''+' .loader').show();
-            },
-            success:function(data) {
-                var jsonObj = eval("("+data+")");
-                $(''+dom+''+' .policy-anli-ltems.ltems2 .title').html(jsonObj['post_title']);
-                $(''+dom+''+' .policy-anli-ltems.ltems2 .desc').html(jsonObj['post_content']);
-            },
-            complete: function(){
-                $(''+dom+''+' .loader').hide();
-            }
-        });
+        //$.ajax({
+        //    type: "GET",
+        //    url: action,
+        //    cache: false,
+        //    beforeSend: function(){
+        //        $('.policy-anli-ltems.ltems2 .desc').empty();
+        //        $(''+dom+''+' .loader').show();
+        //    },
+        //    success:function(data) {
+        //        var jsonObj = eval("("+data+")");
+        //        $(''+dom+''+' .policy-anli-ltems.ltems2 .title').html(jsonObj['post_title']);
+        //        $(''+dom+''+' .policy-anli-ltems.ltems2 .desc').html(jsonObj['post_content']);
+        //    },
+        //    complete: function(){
+        //        $(''+dom+''+' .loader').hide();
+        //    }
+        //});
     })
 }
 
@@ -175,7 +175,8 @@ function status(data,t) {
     }else if(data.status == 1){
         $('#ajaxInfo').text(data.info+t+'s后跳转...');
         setTimeout(function() {
-            location.href = data.url;
+            var href = location.host;
+            window.location.href = data.url;
         },t+'000')
     }
 }
