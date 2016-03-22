@@ -33,7 +33,7 @@
 <include file="./tpl/miniBay/Block/header.html" />
 <div class="header_banner liuxue-banner">
     <div class="header_ba_desc">
-        miniBay
+        快递速查
         <br>与您的优质生活同行
     </div>
 </div>
@@ -80,7 +80,12 @@
 <script src="__PUB__/js/module.js"></script>
 <script src="__PUB__/js/class.js"></script>
 <script>
+    $("#kuaidi").hide();
     $(function () {
+        setTimeout(function(){
+            $("#kuaidi").fadeIn(500);
+        },1000);
+
         $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {
             e.stopPropagation();
         });
